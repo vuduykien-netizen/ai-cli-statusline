@@ -1,0 +1,13 @@
+# Status line for the OpenAI Codex CLI (tested on codex-cli 0.169).
+# Copy the [tui] lines into ~/.codex/config.toml (or $CODEX_HOME/config.toml),
+# or run `python install.py --codex`.
+# If your config already has a [tui] table, add the status_line key inside it
+# instead of creating a second [tui] table.
+#
+# Same order as the Claude Code line: project, branch, model + reasoning,
+# context, 5-hour limit, weekly limit.
+# Change it for the current session with /statusline inside Codex.
+# Codex hides an item when it has no data (for example no git branch).
+
+[tui]
+status_line = ["project-name", "git-branch", "model-with-reasoning", "context-used", "five-hour-limit", "weekly-limit"]
